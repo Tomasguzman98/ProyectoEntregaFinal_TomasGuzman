@@ -1,0 +1,360 @@
+@import 'variables';
+
+.titulos {
+    color: $color-primario;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    overflow: hidden;
+    list-style: none;
+    display: inline-block;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center; 
+    height: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    float: left;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: $color-fondo;
+}
+
+.active {
+    background-color: #d6a214a4;
+}
+.body {
+    background-image: url("https://i.pinimg.com/originals/d8/53/2a/d8532af5c986966ee2a1e0d3a411a44b.jpg");
+    background-repeat: no-repeat;
+    background-color: $color-fondo;
+    text-align: right;
+    color: white;
+    overflow-x: hidden;
+}
+.bodyblack {
+    background-color: $color-fondo;
+    overflow-x: hidden;
+}
+aside {
+    position: absolute;     
+    text-align: center;    
+    bottom: 200px;
+    left: 400px;
+    width: 100%;
+}
+textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+p {
+    color:white
+}
+input {
+    height:25px;
+    width: 300px;
+    font-size:14pt;
+}
+.marca{
+    font-family: "Roblox", sans-serif;
+    color: $color-primario;
+    text-align: left;
+    font-size: 70px;
+}
+h2 {
+    position: absolute;     
+    text-align: center;    
+    bottom: 450px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    font-family: "steelfish", sans-serif;
+    font-size: 30pt;
+    font-weight: normal;
+    color: goldenrod;
+    text-decoration: underline rgb(155, 111, 0);
+}
+h3 {
+    color: white;
+}
+h4 { 
+    color: goldenrod;
+    position: absolute;     
+    text-align: center;    
+    bottom: 400px;
+    left: -300px;
+    width: 40%;
+    font-size: 60pt;
+    font-family: "steelfish", sans-serif;
+}
+.texto-principal {
+    position: absolute;     
+    text-align: center;    
+    bottom: 50px;
+    left: 570px;
+    width: 800px;
+    font-size: 20px;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    width: 100%;
+    margin-top: 814px;
+    padding: 10px;
+    height: 60px;
+}
+.textofooter {
+    width: 100%;
+    padding: 12px;
+    margin-top: -20px;
+    margin-left: -60px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: right;
+}
+.gps {
+    margin-top: 200px;
+}
+.textofooter-ubicacion {
+    width: 100%;
+    padding: 12px;
+    margin-top: -800px;
+    margin-left: -60px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: right;
+}
+.textofooter-contactanos {
+    width: 100%;
+    padding: 12px;
+    margin-top: 50px;
+    margin-left: -60px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: right;
+}
+.textofooter-ofertas {
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -60px;
+    resize: vertical;
+    text-align: right;
+}
+aside p {
+    position: absolute;     
+    text-align: center;    
+    bottom: 0px;
+    left: -300px;
+    width: 40%;
+}
+.galeria {
+    display: grid;
+    grid-template-areas:
+        'foto1'
+        'foto2'
+        'foto3'
+        'foto4'
+        'foto5'
+        'foto6'
+        'foto7'
+        'foto8'
+        'foto9'
+        'foto10'
+        'foto11';
+    grid-template-columns: repeat(1, auto);
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    margin-top: 5vh;
+}  
+@media only screen and (min-width: 800px) {
+    .galeria {
+    grid-template-areas:
+        'foto3  foto2 foto2'
+        'foto6  foto4 foto1'
+        'foto6  foto5 foto5'
+        'foto7  foto8 foto8'
+        'foto9  foto10 foto10'
+        'foto9  foto11 foto11';
+    grid-template-columns: auto auto auto;
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    background-color: rgba(11, 117, 255, 0);
+    margin-top: 10vh;
+    }
+}
+
+.galeria > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0.5px;
+    font-size: 30px;
+}
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+.foto7 {
+    grid-area: foto7;
+}
+.foto8 {
+    grid-area: foto8;
+}
+.foto9 {
+    grid-area: foto9;
+}
+.foto10 {
+    grid-area: foto10;
+}
+.foto11 {
+    grid-area: foto11;
+}
+
+.galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+img:hover {
+    transform: scale(1.1);
+    background-color: grey;
+    opacity: 95%;
+}
+
+.textogamabaja {
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: -60px;
+    resize: vertical;
+    text-align: center;
+    font-size: 60px;
+    font-family:"steelfish", sans-serif;
+    color: goldenrod;
+    text-decoration: underline rgb(155, 111, 0);
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+.textogamamedia {
+    width: 100%;
+    padding: 30px;
+    margin-top: 200px;
+    margin-bottom:50px;
+    margin-left: -60px;
+    resize: vertical;
+    text-align: center;
+    font-size: 60px;
+    font-family:"steelfish", sans-serif;
+    color: goldenrod;
+    text-decoration: underline rgb(155, 111, 0);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.ofertas {
+    display: grid;
+    grid-template-areas:
+        'foto1'
+        'foto2'
+        'foto3'
+        'foto4'
+        'foto5'
+        'foto6'
+        'foto7'
+        'foto8'
+        'foto9'
+        'foto10'
+        'foto11';
+    grid-template-columns: repeat(1, auto);
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    margin-top: 5vh;
+    background-color: rgba(0, 0, 255, 0);
+}
+@media only screen and (min-width: 800px) {
+    .ofertas {
+    grid-template-areas:
+        'foto3  foto2 foto2'
+        'foto6  foto2 foto1'
+        'foto6  foto5 foto5'
+        'foto7  foto8 foto8'
+        'foto9  foto10 foto10'
+        'foto9  foto11 foto11';
+    grid-template-columns: auto auto auto;
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    background-color: rgba(11, 117, 255, 0);
+    margin-top: 30vh;
+    }
+}
+.textoofertas {
+    width: 100%;
+    padding: 30px;
+    margin-top: 200px;
+    margin-bottom: 350px;
+    margin-left: 250px;
+    resize: vertical;
+    text-align: center;
+    font-size: 60px;
+    font-family:"steelfish", sans-serif;
+    color: goldenrod;
+    text-decoration: underline rgb(155, 111, 0);
+}

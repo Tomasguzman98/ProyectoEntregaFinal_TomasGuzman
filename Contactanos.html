@@ -7,7 +7,7 @@
     <title>Contactos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body">
+<body class="body_contactos">
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -17,30 +17,31 @@
             <li><a class="active">Contactanos</a></li>
         </ul>
     </nav>
-    <aside>
-        <div class="a">Nombre:</div><input type="text">
-    <br>
-        <div class="a">Apellido:</div><input type="text">
-    <br>
-        <div class="a">E-mail:</div><input type="text">
-    <br>
-    <br>
-        <select name="Estado Civil" id="">
+<div class="principal">
+            <div class="texto1">Nombre:</div><input type="text">
+        <br>
+            <div class="texto2">Apellido:</div><input type="text">
+        <br>
+            <div class="texto3">E-mail:</div><input type="text">
+        <br>
+        <br>
+        <select class="texto4" name="Estado Civil" id="">
             <option value="Soltero">Soltero/a</option>
             <option value="Casado">Casado/a</option>
             <option value="Viudo">Viudo/a</option>
         </select>
     <br>
     <br>
-    <div>Desea recibir el Newsletter<input type="checkbox"></div>
+    <div class="texto5">Desea recibir el Newsletter<input type="checkbox"></div>
     <br>
-    <textarea name="" id="" cols="80" rows="14" placeholder="Escribenos tus ideas..."></textarea>
+    <textarea id="subject" name="subject" placeholder="Deja tu comentario aqui.."
+    style="height:200px"></textarea>
     <br>
-    <form action="">
+    <form class="texto6" action="">
         <input type="button" value="Limpiar formulario">
         <input type="button" value="Enviar formulario">
     </form>
-    </aside>
+</div>
     <footer>
         <div class="textofooter-contactanos">
             <ul>

@@ -331,33 +331,71 @@ img:hover {
     margin-top: 5vh;
     background-color: rgba(0, 0, 255, 0);
 }
-@media only screen and (min-width: 800px) {
-    .ofertas {
+.textoofertas {
+    width: 100%;
+    padding: 30px;
+    margin-top: 300px;
+    margin-bottom: 350px;
+    margin-left: 250px;
+    resize: horizontal;
+    text-align: center;
+    font-size: 60px;
+    font-family:"steelfish", sans-serif;
+    color: goldenrod;
+    text-decoration: underline rgb(155, 111, 0);
+}
+.principal {
+    padding-top: 20px;
+    margin-top: 10vh;
+}
+
+@media only screen and (min-width: 720px) {
+    .principal {
     grid-template-areas:
-        'foto3  foto2 foto2'
-        'foto6  foto2 foto1'
-        'foto6  foto5 foto5'
-        'foto7  foto8 foto8'
-        'foto9  foto10 foto10'
-        'foto9  foto11 foto11';
-    grid-template-columns: auto auto auto;
-    align-content: stretch;
+    'texto1'
+    'texto2'
+    'texto3'
+    'texto4'
+    'texto5'
+    'texto6';
+    grid-template-columns: auto;
+    align-content: center;
     gap: 10px;
     padding: 0.5vw;
     background-color: rgba(11, 117, 255, 0);
     margin-top: 30vh;
     }
 }
-.textoofertas {
-    width: 100%;
-    padding: 30px;
-    margin-top: 200px;
-    margin-bottom: 350px;
-    margin-left: 250px;
-    resize: vertical;
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}
+
+.texto3 {
+    grid-area: texto3;
+}
+
+.texto4 {
+    grid-area: texto4;
+}
+
+    .texto5 {
+    grid-area: texto5;
+}
+
+    .texto6 {
+    grid-area: texto6;
+}
+
+.body_contactos {
+    background-image: url("https://i.pinimg.com/originals/d8/53/2a/d8532af5c986966ee2a1e0d3a411a44b.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
     text-align: center;
-    font-size: 60px;
-    font-family:"steelfish", sans-serif;
-    color: goldenrod;
-    text-decoration: underline rgb(155, 111, 0);
+    color: white;
+    overflow-x: hidden;
 }

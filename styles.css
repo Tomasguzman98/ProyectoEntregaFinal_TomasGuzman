@@ -54,7 +54,6 @@ li a:hover {
     background-image: url("https://i.pinimg.com/originals/d8/53/2a/d8532af5c986966ee2a1e0d3a411a44b.jpg");
     background-repeat: no-repeat;
     background-color: black;
-    text-align: right;
     color: white;
     overflow-x: hidden;
 }
@@ -63,8 +62,8 @@ li a:hover {
     overflow-x: hidden;
 }
 aside {
-    position: absolute;     
-    text-align: center;    
+    position: fixed;     
+    text-align: auto;    
     bottom: 200px;
     left: 400px;
     width: 100%;
@@ -87,16 +86,45 @@ input {
     width: 300px;
     font-size:14pt;
 }
+header {
+    display: flex;
+    min-height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
 .marca{
     font-family: "Roblox", sans-serif;
     color: goldenrod;
     text-align: left;
     font-size: 70px;
+    display: flex
+    flex-direction: column;
+}
+.divhistoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.phistoria {
+    position: absolute;     
+    text-align: center;    
+    bottom: 400px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    font-family: "steelfish", sans-serif;
+    font-size: 15pt;
+    font-weight: normal;
+    color: white;
+    background-color: black;
 }
 h2 {
     position: absolute;     
     text-align: center;    
-    bottom: 450px;
+    bottom: 500px;
     left: 0px;
     width: 100%;
     height: 120px;
@@ -120,9 +148,9 @@ h4 {
     font-family: "steelfish", sans-serif;
 }
 .texto-principal {
-    position: absolute;     
-    text-align: center;    
-    bottom: 50px;
+    position: relative;     
+    text-align: center;
+    bottom: -250px;
     left: 570px;
     width: 800px;
     font-size: 20px;
@@ -334,11 +362,11 @@ img:hover {
 .textoofertas {
     width: 100%;
     padding: 30px;
-    margin-top: 300px;
-    margin-bottom: 350px;
-    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 250px;
+    margin-left: 50px;
     resize: horizontal;
-    text-align: center;
+    text-align: auto;
     font-size: 60px;
     font-family:"steelfish", sans-serif;
     color: goldenrod;
